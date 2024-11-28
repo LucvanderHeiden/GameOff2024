@@ -1,0 +1,11 @@
+Model Information:
+* title:	#3DInktober-Ancient Sundial
+* source:	https://sketchfab.com/3d-models/3dinktober-ancient-sundial-b4a2b2313b56466f97bf83083aa8752d
+* author:	urbanmasque (https://sketchfab.com/urbanmasque)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "#3DInktober-Ancient Sundial" (https://sketchfab.com/3d-models/3dinktober-ancient-sundial-b4a2b2313b56466f97bf83083aa8752d) by urbanmasque (https://sketchfab.com/urbanmasque) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

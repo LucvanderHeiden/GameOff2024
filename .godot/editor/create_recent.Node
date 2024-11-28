@@ -1,0 +1,12 @@
+MeshInstance3D
+StaticBody3D
+CollisionShape3D
+Area3D
+AudioStreamPlayer
+Node3D
+GridMap
+Sprite3D
+SpotLight3D
+Camera3D
+CharacterBody3D
+RigidBody3D

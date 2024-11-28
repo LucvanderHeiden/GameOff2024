@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://hhim1qq0w4pa"]
+
+[ext_resource type="Texture2D" uid="uid://cagbac11x7klo" path="res://Textures/Foliage/PTP-Foliage_02-512x512.png" id="1_xgoft"]
+[ext_resource type="Texture2D" uid="uid://bj85ubcwi45tj" path="res://Textures/HedgeNormalMap.png" id="2_v58nm"]
+
+[resource]
+albedo_color = Color(0.803922, 0.960784, 0.854902, 1)
+albedo_texture = ExtResource("1_xgoft")
+normal_enabled = true
+normal_scale = 3.0
+normal_texture = ExtResource("2_v58nm")
+uv1_scale = Vector3(5.229, 2.595, 2.595)
