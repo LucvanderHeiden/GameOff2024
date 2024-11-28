@@ -1,7 +1,6 @@
 res://level_1.tscn
 res://Materials/wall.tres
 res://Materials/floor2.tres
-res://Materials/wall_small.tres
-res://player.tscn
 res://Materials/floor.tres
+res://Materials/wall_small.tres
 res://Materials/letter.tres

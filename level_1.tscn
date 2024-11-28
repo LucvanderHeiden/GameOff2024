@@ -2056,6 +2056,18 @@ mesh = SubResource("BoxMesh_arhik")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
 shape = SubResource("ConvexPolygonShape3D_dvloq")
 
+[node name="Wall102" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(23.03, 0, 0, 0, 9.48248, 0, 0, 0, 4.38984, -103.654, 9.10411, -312.777)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/Wall102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
+material_override = ExtResource("3_5gxiv")
+mesh = SubResource("BoxMesh_arhik")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/Wall102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
+shape = SubResource("ConvexPolygonShape3D_dvloq")
+
 [node name="Wall89" type="StaticBody3D" parent="Walls"]
 transform = Transform3D(23.03, 0, 0, 0, 9.48248, 0, 0, 0, 4.38984, -80.7847, 9.10411, -322.636)
 

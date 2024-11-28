@@ -1,14 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732827478
+::res://::1732832053
 camera.gd::GDScript::-1::1731761057::0::1::::<>Node3D<>::
 Flashlight.gd::GDScript::-1::1732354029::0::1::::<>SpotLight3D<>::
 icon.svg::CompressedTexture2D::4692209729407738705::1731754732::1731764636::1::::<><>::
-level_1.tscn::PackedScene::4778677238110844557::1732827478::0::1::::<><>::uid://dnyub30r6jfpv::::res://player.tscn<>uid://r55ovewdrxgn::::res://Skyboxes/Epic_BlueSunset_EquiRect_flat.png<>uid://bh6m2ysbvojwo::::res://Materials/wall.tres<>uid://ku4jdjrvs0jm::::res://Materials/floor2.tres<>uid://qohkvalew5pj::::res://Materials/floor.tres<>uid://hhim1qq0w4pa::::res://Materials/wall_small.tres<>uid://ba71u2j7b6ypi::::res://state_park_sign/scene.gltf<>uid://b5dv6lxm58cal::::res://Audio/birds_sounds.wav<>uid://d3v1vhoqdavi6::::res://3dinktober-ancient_sundial/scene.gltf<>uid://dtvpthvp4c40m::::res://vianden_castle/scene.gltf<>res://openPathway.gd<>uid://d0js8grc51kiw::::res://lowpoly_candle/scene.gltf<>uid://dnfypmqob7phn::::res://concrete_cat_statue/scene.gltf<>uid://to7dbpduxnd5::::res://wooden_hourglass/scene.gltf<>uid://0gnkw74ibnvn::::res://old_book/scene.gltf
+level_1.tscn::PackedScene::4778677238110844557::1732829129::0::1::::<><>::uid://dnyub30r6jfpv::::res://player.tscn<>uid://r55ovewdrxgn::::res://Skyboxes/Epic_BlueSunset_EquiRect_flat.png<>uid://bh6m2ysbvojwo::::res://Materials/wall.tres<>uid://ku4jdjrvs0jm::::res://Materials/floor2.tres<>uid://qohkvalew5pj::::res://Materials/floor.tres<>uid://hhim1qq0w4pa::::res://Materials/wall_small.tres<>uid://ba71u2j7b6ypi::::res://state_park_sign/scene.gltf<>uid://b5dv6lxm58cal::::res://Audio/birds_sounds.wav<>uid://d3v1vhoqdavi6::::res://3dinktober-ancient_sundial/scene.gltf<>uid://dtvpthvp4c40m::::res://vianden_castle/scene.gltf<>res://openPathway.gd<>uid://d0js8grc51kiw::::res://lowpoly_candle/scene.gltf<>uid://dnfypmqob7phn::::res://concrete_cat_statue/scene.gltf<>uid://to7dbpduxnd5::::res://wooden_hourglass/scene.gltf<>uid://0gnkw74ibnvn::::res://old_book/scene.gltf<>uid://fo4jykafckd1::::res://Materials/letter.tres
 MeshLib.meshlib::MeshLibrary::3857052927599896830::1732357826::0::1::::<><>::
 mesh_lib.tscn::PackedScene::8616141275136155628::1732393324::0::1::::<><>::
 openPathway.gd::GDScript::-1::1732743645::0::1::::<>Area3D<>::
 player.gd::GDScript::-1::1731763535::0::1::::<>CharacterBody3D<>::
 player.tscn::PackedScene::8122479720208496063::1732826135::0::1::::<><>::res://player.gd<>res://camera.gd<>res://Flashlight.gd
+README.md::TextFile::-1::1732829320::0::1::::<><>::
 ::res://3dinktober-ancient_sundial/::1732741065
 license.txt::TextFile::-1::1646981844::0::1::::<><>::
 scene.gltf::PackedScene::9169518139285109299::1646981856::1732741065::1::::<><>::
@@ -28,10 +29,10 @@ scene.gltf::PackedScene::8933714720419079294::1646740960::1732745842::1::::<><>:
 lambert1_baseColor.jpeg::CompressedTexture2D::3049452909969882308::1646740954::1732745843::1::::<><>::
 lambert1_metallicRoughness.png::CompressedTexture2D::2119157969251848784::1646740956::1732745843::1::::<><>::
 lambert1_normal.png::CompressedTexture2D::3780668765783578591::1646740960::1732745843::1::::<><>::
-::res://Materials/::1732827776
+::res://Materials/::1732828413
 floor2.tres::StandardMaterial3D::744953028671383010::1732825446::0::1::::<><>::uid://bxfqmp3dsgb8b::::res://Textures/sandy_gravel_02_4k/textures/sandy_gravel_02_diff_4k.png<>uid://deb2von2rm401::::res://Textures/sandy_gravel_02_4k/textures/sandy_gravel_02_nor_gl_4k.png
 floor.tres::StandardMaterial3D::1152366767150157135::1732827478::0::1::::<><>::uid://bxgaexupgrwpd::::res://Textures/Ground/PTP-Ground_08-512x512.png
-letter.tres::StandardMaterial3D::381623647697589896::1732827776::0::1::::<><>::uid://bxgaexupgrwpd::::res://Textures/Ground/PTP-Ground_08-512x512.png
+letter.tres::StandardMaterial3D::381623647697589896::1732828413::0::1::::<><>::uid://c6tdx8u4m7m8r::::res://Textures/Concrete/PTP-Concrete_06-512x512.png
 wall.tres::StandardMaterial3D::2942516408324753406::1732825446::0::1::::<><>::uid://cagbac11x7klo::::res://Textures/Foliage/PTP-Foliage_02-512x512.png<>uid://bj85ubcwi45tj::::res://Textures/HedgeNormalMap.png
 wall_small.tres::StandardMaterial3D::506281106298883890::1732825446::0::1::::<><>::uid://cagbac11x7klo::::res://Textures/Foliage/PTP-Foliage_02-512x512.png<>uid://bj85ubcwi45tj::::res://Textures/HedgeNormalMap.png
 ::res://old_book/::1732746677
@@ -71,7 +72,7 @@ vertical_posts_normal.png::CompressedTexture2D::3241702482082660852::1659359274:
 HedgeNormalMap.png::CompressedTexture2D::3088102024604861103::1732362831::1732362867::1::::<><>::
 palace-cropped.png::CompressedTexture2D::8984343811976311709::1732355353::1732355385::1::::<><>::
 palace-g105a961ed_640.png::CompressedTexture2D::2487901706779736883::1732354370::1732354414::1::::<><>::
-::res://Textures/Concrete/::1732827819
+::res://Textures/Concrete/::1732828017
 PTP-Concrete_01-512x512.png::CompressedTexture2D::7090191586058658874::1711599918::1732827989::1::::<><>::
 PTP-Concrete_02-512x512.png::CompressedTexture2D::4479438670919618227::1711605278::1732827998::1::::<><>::
 PTP-Concrete_03-512x512.png::CompressedTexture2D::3453571483009080257::1711605518::1731765073::1::::<><>::
@@ -93,7 +94,7 @@ PTP-Elements_09-512x512.png::CompressedTexture2D::6891562435353196809::171161231
 PTP-Elements_10-512x512.png::CompressedTexture2D::4876728094226082023::1711613457::1731765073::1::::<><>::
 PTP-Elements_11-512x512.png::CompressedTexture2D::5175304269261211878::1711637670::1731765073::1::::<><>::
 PTP-Elements_12-512x512.png::CompressedTexture2D::8790145876167869085::1711637697::1731765073::1::::<><>::
-::res://Textures/Floor/::1731765587
+::res://Textures/Floor/::1732827953
 PTP-Floor_01-512x512.png::CompressedTexture2D::8152202812492423371::1711607437::1731765073::1::::<><>::
 PTP-Floor_02-512x512.png::CompressedTexture2D::6072607611751873358::1711607618::1731765587::1::::<><>::
 PTP-Floor_03-512x512.png::CompressedTexture2D::2710594559731099306::1711607663::1731765073::1::::<><>::
@@ -125,7 +126,7 @@ PTP-Ground_09-512x512.png::CompressedTexture2D::1295351022413308271::1711604996:
 PTP-Ground_10-512x512.png::CompressedTexture2D::7079506859408924498::1711605975::1731765072::1::::<><>::
 PTP-Ground_11-512x512.png::CompressedTexture2D::8909409513617308625::1711606481::1731765072::1::::<><>::
 PTP-Ground_12-512x512.png::CompressedTexture2D::6077803966364739859::1711610079::1731765072::1::::<><>::
-::res://Textures/Metal/::1731765072
+::res://Textures/Metal/::1732827972
 PTP-Metal_01-512x512.png::CompressedTexture2D::7887134672807934333::1711599081::1732827972::1::::<><>::
 PTP-Metal_02-512x512.png::CompressedTexture2D::4752171287147949402::1711606308::1731765072::1::::<><>::
 PTP-Metal_03-512x512.png::CompressedTexture2D::990696370251405512::1711606364::1731765072::1::::<><>::
