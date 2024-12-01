@@ -1,9 +1,10 @@
 MeshInstance3D
-CollisionShape3D
-Area3D
 StaticBody3D
-AudioStreamPlayer
+CollisionShape3D
 Node3D
+AudioStreamPlayer
+AudioStreamPlayer3D
+Area3D
 GridMap
 Sprite3D
 SpotLight3D

@@ -7,6 +7,13 @@ extends Area3D
 
 @export var world_env: Node
 @export var global_lighting: Node
+
+@export var audio_ambience: Node
+@export var audio_sfx: Node
+@export var audio_music: Node
+@export var audio_night: String = "res://Audio/70100__gregswinford__eerie_forest.mp3"
+
+@export var wall_to_remove_path: NodePath
 # Flag to track if the player is within the area
 var player_in_area: bool = false
 
@@ -57,6 +64,25 @@ func _pickup_flashlight():
 	
 	if global_lighting:
 		global_lighting.light_energy = 0.01
+	
+	if audio_ambience:
+		audio_ambience.volume_db = -10
+		 # Load the new audio stream
+		var night_stream = load(audio_night) as AudioStream
+		if night_stream:
+			# Assign the loaded stream to the AudioStreamPlayer
+			audio_ambience.stream = night_stream
+			audio_ambience.play()
+	
+	if audio_sfx:
+		audio_sfx.play()
+	
+	if audio_music:
+		audio_music.play()
+	
+	var wall_to_remove = get_node_or_null(wall_to_remove_path)
+	if wall_to_remove:
+		wall_to_remove.queue_free()
 
 # Helper function to get the flashlight in the player's hand
 func _get_flashlight_in_hand() -> Node:
