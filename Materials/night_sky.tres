@@ -1,0 +1,6 @@
+[gd_resource type="PanoramaSkyMaterial" load_steps=2 format=3 uid="uid://cmocoadmfbx30"]
+
+[ext_resource type="Texture2D" uid="uid://cjrh2bcimd64d" path="res://Skyboxes/AllSky_Night_MoonBurst Equirect.png" id="1_sqvbn"]
+
+[resource]
+panorama = ExtResource("1_sqvbn")

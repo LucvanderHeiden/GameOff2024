@@ -1,11 +1,11 @@
-[gd_scene load_steps=50 format=3 uid="uid://cac3d7a3noyk0"]
+[gd_scene load_steps=53 format=3 uid="uid://cac3d7a3noyk0"]
 
 [ext_resource type="PackedScene" uid="uid://dnyub30r6jfpv" path="res://player.tscn" id="1_1hwc0"]
-[ext_resource type="Environment" uid="uid://be770fl01hee8" path="res://Materials/env_day.tres" id="1_n071j"]
+[ext_resource type="Texture2D" uid="uid://r55ovewdrxgn" path="res://Skyboxes/Epic_BlueSunset_EquiRect_flat.png" id="1_t2dje"]
 [ext_resource type="Script" path="res://WorldEnvironment.gd" id="2_gq3i2"]
 [ext_resource type="Material" uid="uid://bh6m2ysbvojwo" path="res://Materials/wall.tres" id="3_5gxiv"]
+[ext_resource type="Texture2D" uid="uid://cjrh2bcimd64d" path="res://Skyboxes/AllSky_Night_MoonBurst Equirect.png" id="3_ckchj"]
 [ext_resource type="Material" uid="uid://ku4jdjrvs0jm" path="res://Materials/floor2.tres" id="3_kfk4t"]
-[ext_resource type="Script" path="res://DirectionalLight3D.gd" id="3_pd363"]
 [ext_resource type="Material" uid="uid://qohkvalew5pj" path="res://Materials/floor.tres" id="6_37mif"]
 [ext_resource type="Material" uid="uid://hhim1qq0w4pa" path="res://Materials/wall_small.tres" id="6_bh5nv"]
 [ext_resource type="PackedScene" uid="uid://ba71u2j7b6ypi" path="res://state_park_sign/scene.gltf" id="7_1sfa5"]
@@ -21,6 +21,19 @@
 [ext_resource type="PackedScene" uid="uid://d3mpn6r143ki4" path="res://stone_pillar/scene.gltf" id="17_njjic"]
 [ext_resource type="PackedScene" uid="uid://uqehbq6dqkkh" path="res://flashlight.glb" id="18_ksjsr"]
 [ext_resource type="Script" path="res://dayNightTransition.gd" id="19_4ubdd"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_oweji"]
+panorama = ExtResource("1_t2dje")
+
+[sub_resource type="Sky" id="Sky_aq5n0"]
+sky_material = SubResource("PanoramaSkyMaterial_oweji")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_ehc3u"]
+background_mode = 2
+sky = SubResource("Sky_aq5n0")
+tonemap_mode = 2
+tonemap_white = 6.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_te5kp"]
 
@@ -117,13 +130,13 @@ radius = 1.09622
 [node name="Level" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource("1_n071j")
+environment = SubResource("Environment_ehc3u")
 script = ExtResource("2_gq3i2")
+new_sky_texture = ExtResource("3_ckchj")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.997684, 0.0398824, 0.0550952, -7.08161e-08, -0.810042, 0.586372, 0.0680154, 0.585015, 0.808166, 0, 0, 0)
+transform = Transform3D(-0.997684, 0.0398823, 0.0550952, 0, -0.810042, 0.586372, 0.0680153, 0.585015, 0.808166, 0, 0, 0)
 shadow_enabled = true
-script = ExtResource("3_pd363")
 
 [node name="Player" parent="." instance=ExtResource("1_1hwc0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180.319, 2.99868, -372.428)
@@ -3077,18 +3090,6 @@ mesh = SubResource("BoxMesh_arhik")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
 shape = SubResource("ConvexPolygonShape3D_dvloq")
 
-[node name="Wall151" type="StaticBody3D" parent="Walls"]
-transform = Transform3D(23.03, 0, 0, 0, 9.48248, 0, 0, 0, 4.38984, -216.39, 9.10411, -395.641)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/Wall151"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
-material_override = ExtResource("3_5gxiv")
-mesh = SubResource("BoxMesh_arhik")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/Wall151"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
-shape = SubResource("ConvexPolygonShape3D_dvloq")
-
 [node name="Wall149" type="StaticBody3D" parent="Walls"]
 transform = Transform3D(23.03, 0, 0, 0, 9.48248, 0, 0, 0, 4.38984, -193.543, 9.10411, -349.309)
 
@@ -3098,18 +3099,6 @@ material_override = ExtResource("3_5gxiv")
 mesh = SubResource("BoxMesh_arhik")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/Wall149"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
-shape = SubResource("ConvexPolygonShape3D_dvloq")
-
-[node name="Wall150" type="StaticBody3D" parent="Walls"]
-transform = Transform3D(23.03, 0, 0, 0, 9.48248, 0, 0, 0, 4.38984, -216.295, 9.10411, -349.309)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/Wall150"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
-material_override = ExtResource("3_5gxiv")
-mesh = SubResource("BoxMesh_arhik")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/Wall150"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486009, -0.489358, 0)
 shape = SubResource("ConvexPolygonShape3D_dvloq")
 
@@ -3839,12 +3828,10 @@ shape = SubResource("BoxShape3D_00ovg")
 [node name="flashlight" parent="." instance=ExtResource("18_ksjsr")]
 transform = Transform3D(0.0484836, 0.0314538, 0.00204946, 0, 0.00376004, -0.0577067, -0.0315205, 0.048381, 0.0031524, -183.385, 1.96897, -372.524)
 
-[node name="Area3D (PickupFlashlight)" type="Area3D" parent="." node_paths=PackedStringArray("world_env", "global_lighting")]
+[node name="Area3D (PickupFlashlight)" type="Area3D" parent="."]
 transform = Transform3D(1.27494, 0, 0, 0, 0.955755, 0, 0, 0, 1.27494, -183.359, 0.954623, -372.4)
 script = ExtResource("19_4ubdd")
 flashlight_on_table_path = NodePath("../flashlight")
-world_env = NodePath("../WorldEnvironment")
-global_lighting = NodePath("../DirectionalLight3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D (PickupFlashlight)"]
 shape = SubResource("CylinderShape3D_qj4dx")

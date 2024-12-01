@@ -1,6 +1,13 @@
 res://level_1.tscn
+res://Materials/night_sky.tres
+res://Materials/env_night.tres
 res://Materials/wall.tres
 res://Materials/floor2.tres
 res://Materials/floor.tres
 res://Materials/wall_small.tres
 res://Materials/letter.tres
+res://player.tscn
+res://WorldEnvironment.gd
+res://dayNightTransition.gd
+res://Materials/env_day.tres
+res://DirectionalLight3D.gd

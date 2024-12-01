@@ -1,0 +1,13 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://be770fl01hee8"]
+
+[ext_resource type="Material" uid="uid://c6uswttajwydp" path="res://Materials/day_sky.tres" id="1_mdskf"]
+
+[sub_resource type="Sky" id="Sky_aq5n0"]
+sky_material = ExtResource("1_mdskf")
+process_mode = 1
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_aq5n0")
+tonemap_mode = 2
+tonemap_white = 6.0

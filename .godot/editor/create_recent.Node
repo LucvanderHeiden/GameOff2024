@@ -1,7 +1,7 @@
 MeshInstance3D
-StaticBody3D
 CollisionShape3D
 Area3D
+StaticBody3D
 AudioStreamPlayer
 Node3D
 GridMap
