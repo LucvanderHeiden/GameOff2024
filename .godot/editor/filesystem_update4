@@ -1,4 +1,5 @@
 res://level_1.tscn
+res://pause_menu.gdshader
 res://Materials/env_day.tres
 res://Materials/wall.tres
 res://Materials/floor2.tres
@@ -6,5 +7,5 @@ res://Materials/floor.tres
 res://Materials/wall_small.tres
 res://Materials/letter.tres
 res://player.tscn
-res://dayNightTransition.gd
-res://Materials/wood.tres
+res://credits.tscn
+res://pause_menu.tscn

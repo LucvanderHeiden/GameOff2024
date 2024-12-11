@@ -14,8 +14,13 @@ extends Area3D
 @export var audio_night: String = "res://Audio/70100__gregswinford__eerie_forest.mp3"
 
 @export var wall_to_remove_path: NodePath
+@export var text_mesh_path: NodePath
+
+@export var mesh_instance_path: NodePath
+@export var collision_shape_path: NodePath
 # Flag to track if the player is within the area
 var player_in_area: bool = false
+var transitioned: bool = false
 
 func _ready():
 	# Connect the body_entered and body_exited signals
@@ -38,11 +43,14 @@ func _on_body_exited(body):
 		player_in_area = false
 
 func _process(delta):
-	if player_in_area and Input.is_action_just_pressed("interact"):
+	if player_in_area and Input.is_action_just_pressed("interact") and not transitioned:
 		# Call the function to handle picking up the flashlight
 		_pickup_flashlight()
 
 func _pickup_flashlight():
+	transitioned = true
+	var mesh_instance = get_node_or_null(mesh_instance_path)
+	var collision_shape = get_node_or_null(collision_shape_path)
 	# Remove the flashlight from the table
 	var flashlight_on_table = get_node_or_null(flashlight_on_table_path)
 	if flashlight_on_table:
@@ -63,7 +71,7 @@ func _pickup_flashlight():
 		world_env.call("_change_sky")
 	
 	if global_lighting:
-		global_lighting.light_energy = 0.01
+		global_lighting.light_energy = 0
 	
 	if audio_ambience:
 		audio_ambience.volume_db = -10
@@ -83,6 +91,17 @@ func _pickup_flashlight():
 	var wall_to_remove = get_node_or_null(wall_to_remove_path)
 	if wall_to_remove:
 		wall_to_remove.queue_free()
+	
+	mesh_instance.visible = true  # Makes the MeshInstance3D visible
+	
+	collision_shape.disabled = false  # Enables the CollisionShape3D
+	
+	# Update the text on the TextMesh
+	var text_mesh_instance = get_node_or_null(text_mesh_path)
+	if text_mesh_instance and text_mesh_instance.mesh is TextMesh:
+		var text_mesh = text_mesh_instance.mesh as TextMesh
+		text_mesh.text = "Why did you do that?"  # Set your desired text here
+		print("Updated TextMesh text to: ", text_mesh.text)
 
 # Helper function to get the flashlight in the player's hand
 func _get_flashlight_in_hand() -> Node:

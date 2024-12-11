@@ -1,0 +1,16 @@
+res://Animations/new_animation.tres::4dedd9460e679522ebfc683f34b68599::1733778551::res://.godot/exported/133200997/export-bd25453bad7dc69a3e848e4ef46ef90b-new_animation.res
+res://Materials/day_sky.tres::c8bf29a066a720e21aa022f21bb6d171::1733005008::res://.godot/exported/133200997/export-a23ab8fa6ca16256091a36828a6786ff-day_sky.res
+res://Materials/env_day.tres::f033efa3cfc4a2dce534d6476ff394d4::1733949862::res://.godot/exported/133200997/export-8902c0f1feede9464aaf6c82a918cf01-env_day.res
+res://Materials/env_night.tres::ed1b38cb44599cd946d4449eb46a2710::1733059286::res://.godot/exported/133200997/export-ffa2c6b0210c43ba357e78179447c50c-env_night.res
+res://Materials/floor2.tres::587e7f4f463d28fbfe1e34ec6cdb7c07::1733949862::res://.godot/exported/133200997/export-cda441f4c6de0c749707a1117e820eb2-floor2.res
+res://Materials/floor.tres::e9d4db98d824327cc45db87648318036::1733949862::res://.godot/exported/133200997/export-dbf86f01001f27794998d60467ce454d-floor.res
+res://Materials/letter.tres::5332af2c3279e34647407f0181502dc3::1733949862::res://.godot/exported/133200997/export-47d44a74ebac4480a680d38256605bfc-letter.res
+res://Materials/night_sky.tres::e9ebea84bab06b7f1703a0fed810d7c0::1733059252::res://.godot/exported/133200997/export-aeb38d126a187d83ab56371e81e3d563-night_sky.res
+res://Materials/wall.tres::673955be250a048b3502a9fb0a70096f::1733949862::res://.godot/exported/133200997/export-5ef3f7a47fb72eb4e0b62b677d3a1081-wall.res
+res://Materials/wall_small.tres::ad71b760df0c5866feb2dd1e8b12fd31::1733949862::res://.godot/exported/133200997/export-d900e9e41dce98d14d91fcc15afd6e87-wall_small.res
+res://Materials/wood.tres::8f90f3d24beccfb578164002e7d6fb82::1733081910::res://.godot/exported/133200997/export-16cf8a813189d36dae66c3cb851b12c9-wood.res
+res://credits.tscn::7ddc5e73ca2eeef73f9e7dca7968b1f4::1733951644::res://.godot/exported/133200997/export-88886d509479dcca8ec994bc2c1f3191-credits.scn
+res://level_1.tscn::c7904b3b783e09dcd16e446fac3eb8aa::1733951730::res://.godot/exported/133200997/export-63309efd344a9c730c2375c6c1edaf63-level_1.scn
+res://mesh_lib.tscn::539c477bc6e70e171c7c59772ea38667::1732393324::res://.godot/exported/133200997/export-7fcfe70f279c8205792adfc6d86761ca-mesh_lib.scn
+res://pause_menu.tscn::eff22b81534a4acb37dd8e719dc2ffd6::1733951322::res://.godot/exported/133200997/export-8f8844d4375fca029c0f20cf6f905ea1-pause_menu.scn
+res://player.tscn::8bb1f78d55ad14aa5d982919d2dbb202::1733951322::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
